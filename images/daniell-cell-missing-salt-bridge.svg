@@ -1,0 +1,69 @@
+<svg width="960" height="760" viewBox="0 0 960 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="960" height="760" fill="#f8f7f2"/>
+  <text x="480" y="78" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" font-weight="700" fill="#111827">Voltmeter</text>
+
+  <path d="M226 196 H404" stroke="#111827" stroke-width="6" stroke-linecap="round"/>
+  <path d="M556 196 H728" stroke="#111827" stroke-width="6" stroke-linecap="round"/>
+  <path d="M226 196 V320" stroke="#111827" stroke-width="6" stroke-linecap="round"/>
+  <path d="M728 196 V320" stroke="#111827" stroke-width="6" stroke-linecap="round"/>
+  <path d="M310 178 H356" stroke="#111827" stroke-width="4" stroke-linecap="round"/>
+  <path d="M356 178 L342 168 M356 178 L342 188" stroke="#111827" stroke-width="4" stroke-linecap="round"/>
+  <text x="292" y="183" font-family="Arial, sans-serif" font-size="26" fill="#111827">e-</text>
+  <path d="M592 178 H638" stroke="#111827" stroke-width="4" stroke-linecap="round"/>
+  <path d="M638 178 L624 168 M638 178 L624 188" stroke="#111827" stroke-width="4" stroke-linecap="round"/>
+  <text x="570" y="183" font-family="Arial, sans-serif" font-size="26" fill="#111827">e-</text>
+
+  <circle cx="480" cy="196" r="56" fill="#f7d34c" stroke="#a16207" stroke-width="5"/>
+  <path d="M446 197 C464 173 497 171 519 194" stroke="#111827" stroke-width="3" fill="none"/>
+  <path d="M480 196 L462 174" stroke="#111827" stroke-width="4" stroke-linecap="round"/>
+
+  <text x="55" y="350" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#111827">Anode</text>
+  <text x="16" y="396" font-family="Arial, sans-serif" font-size="34" fill="#111827">(Oxidation)</text>
+  <text x="170" y="284" text-anchor="middle" font-family="Arial, sans-serif" font-size="64" font-weight="700" fill="#111827">-</text>
+  <text x="844" y="350" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#111827">Cathode</text>
+  <text x="798" y="396" font-family="Arial, sans-serif" font-size="34" fill="#111827">(Reduction)</text>
+  <text x="806" y="292" text-anchor="middle" font-family="Arial, sans-serif" font-size="72" font-weight="700" fill="#111827">+</text>
+
+  <ellipse cx="290" cy="410" rx="150" ry="31" fill="#f8f7f2" stroke="#111827" stroke-width="5"/>
+  <path d="M140 410 V612 C140 660 440 660 440 612 V410" stroke="#111827" stroke-width="5" fill="url(#leftGlass)"/>
+  <path d="M150 507 C210 530 340 530 430 508 V614 C430 648 150 648 150 614 V507Z" fill="#c9eef7" opacity="0.75"/>
+  <path d="M208 304 H258 V574 C258 590 208 590 208 574 V304Z" fill="url(#zincMetal)" stroke="#52525b" stroke-width="4"/>
+  <rect x="266" y="320" width="74" height="64" rx="12" fill="#facc15" opacity="0.92"/>
+  <text x="303" y="364" text-anchor="middle" font-family="Arial, sans-serif" font-size="41" font-weight="700" fill="#111827">Zn</text>
+  <rect x="202" y="594" width="176" height="68" rx="13" fill="#eab308" opacity="0.82"/>
+  <text x="290" y="642" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#111827">ZnSO₄</text>
+
+  <ellipse cx="670" cy="410" rx="150" ry="31" fill="#f8f7f2" stroke="#111827" stroke-width="5"/>
+  <path d="M520 410 V612 C520 660 820 660 820 612 V410" stroke="#111827" stroke-width="5" fill="url(#rightGlass)"/>
+  <path d="M530 508 C596 532 724 532 810 510 V614 C810 648 530 648 530 614 V508Z" fill="#70d5eb" opacity="0.82"/>
+  <path d="M701 304 H751 V574 C751 590 701 590 701 574 V304Z" fill="url(#copperMetal)" stroke="#c2410c" stroke-width="4"/>
+  <rect x="624" y="320" width="74" height="64" rx="12" fill="#facc15" opacity="0.92"/>
+  <text x="661" y="364" text-anchor="middle" font-family="Arial, sans-serif" font-size="41" font-weight="700" fill="#111827">Cu</text>
+  <rect x="626" y="594" width="176" height="68" rx="13" fill="#a3e635" opacity="0.85"/>
+  <text x="714" y="642" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#111827">CuSO₄</text>
+
+  <text x="480" y="726" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#111827">Zn(s) | ZnSO₄(aq) || CuSO₄(aq) | Cu(s)</text>
+
+  <defs>
+    <linearGradient id="leftGlass" x1="140" x2="440" y1="410" y2="640" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffffff" stop-opacity="0.8"/>
+      <stop offset="0.5" stop-color="#dbeafe" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.65"/>
+    </linearGradient>
+    <linearGradient id="rightGlass" x1="520" x2="820" y1="410" y2="640" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffffff" stop-opacity="0.8"/>
+      <stop offset="0.5" stop-color="#bae6fd" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.65"/>
+    </linearGradient>
+    <linearGradient id="zincMetal" x1="208" x2="258" y1="304" y2="590" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#b8b8b8"/>
+      <stop offset="0.5" stop-color="#737373"/>
+      <stop offset="1" stop-color="#d4d4d4"/>
+    </linearGradient>
+    <linearGradient id="copperMetal" x1="701" x2="751" y1="304" y2="590" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fb923c"/>
+      <stop offset="0.48" stop-color="#c2410c"/>
+      <stop offset="1" stop-color="#fdba74"/>
+    </linearGradient>
+  </defs>
+</svg>
