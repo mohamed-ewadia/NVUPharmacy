@@ -5,6 +5,7 @@ import {
   Beaker,
   FlaskConical,
   GraduationCap,
+  Mail,
   Microscope,
   TestTubes
 } from "lucide-react";
@@ -15,6 +16,7 @@ interface WelcomeScreenProps {
 }
 
 const mohamedWhatsappUrl = "https://wa.me/201033117802";
+const mohamedEmail = "mohamedewaida8@gmail.com";
 
 export function WelcomeScreen({ onStart }: WelcomeScreenProps) {
   return (
@@ -173,26 +175,33 @@ export function WelcomeScreen({ onStart }: WelcomeScreenProps) {
           </div>
         </motion.div>
 
-        <motion.footer
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.25 }}
-          className="mx-auto mt-10 max-w-3xl rounded-2xl border border-white/15 bg-white/10 px-5 py-4 text-sm text-white/70 backdrop-blur-xl md:text-base"
-        >
-          <p className="font-semibold text-white/85">
-            Made by{" "}
-            <a
-              href={mohamedWhatsappUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="text-cyan-200 transition hover:text-white hover:underline"
-            >
-              Eng/Mohamed Ewaida
-            </a>
-          </p>
-        </motion.footer>
       </motion.div>
 
+      <motion.footer
+        initial={{ opacity: 0, x: -16 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ delay: 1.25 }}
+        className="absolute bottom-6 left-4 right-4 z-20 rounded-2xl border border-white/15 bg-white/10 px-5 py-4 text-left text-sm text-white/70 shadow-2xl backdrop-blur-xl sm:right-auto sm:w-96 md:left-8"
+      >
+        <div className="mb-2 text-xs font-semibold uppercase tracking-wide text-white/50">
+          Made by
+        </div>
+        <a
+          href={mohamedWhatsappUrl}
+          target="_blank"
+          rel="noreferrer"
+          className="block font-bold text-cyan-200 transition hover:text-white hover:underline md:text-base"
+        >
+          Eng/Mohamed Ewaida
+        </a>
+        <a
+          href={`mailto:${mohamedEmail}`}
+          className="mt-2 flex min-w-0 items-center gap-2 text-white/75 transition hover:text-white hover:underline"
+        >
+          <Mail size={16} className="shrink-0 text-cyan-200" />
+          <span className="truncate">{mohamedEmail}</span>
+        </a>
+      </motion.footer>
     </div>
   );
 }
