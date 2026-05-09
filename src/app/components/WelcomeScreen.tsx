@@ -15,8 +15,6 @@ interface WelcomeScreenProps {
 }
 
 const mohamedWhatsappUrl = "https://wa.me/201033117802";
-const adhamPortfolioUrl =
-  "https://adham1611.github.io/Professional-Portfolio-Website/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZnRzaARruedleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAaeK1QQZtNd_BCE1cDSArvrlA9d9AsuUxDJmngceSAopUtwR2blxkleNc6MV_Q_aem_trd9XK80pOy5nZXfajumJw";
 
 export function WelcomeScreen({ onStart }: WelcomeScreenProps) {
   return (
@@ -190,15 +188,6 @@ export function WelcomeScreen({ onStart }: WelcomeScreenProps) {
               className="text-cyan-200 transition hover:text-white hover:underline"
             >
               Eng/Mohamed Ewaida
-            </a>{" "}
-            and{" "}
-            <a
-              href={adhamPortfolioUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="text-cyan-200 transition hover:text-white hover:underline"
-            >
-              Eng/Adham Hieba
             </a>
           </p>
         </motion.footer>
