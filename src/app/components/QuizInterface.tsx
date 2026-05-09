@@ -43,6 +43,8 @@ interface ShuffledOption {
   originalIndex: number;
 }
 
+const QUESTION_TIME_SECONDS = 120;
+
 function shuffleOptions(options: string[], correctAnswer: number): ShuffledOption[] {
   const shuffledOptions = options.map((text, originalIndex) => ({
     text,
@@ -97,7 +99,7 @@ export function QuizInterface({
   onBackToLevels
 }: QuizInterfaceProps) {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const [timeLeft, setTimeLeft] = useState(60);
+  const [timeLeft, setTimeLeft] = useState(QUESTION_TIME_SECONDS);
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
   const [showExplanation, setShowExplanation] = useState(false);
   const [score, setScore] = useState(0);
@@ -193,7 +195,7 @@ export function QuizInterface({
       setCurrentQuestionIndex(currentQuestionIndex + 1);
       setSelectedAnswer(null);
       setShowExplanation(false);
-      setTimeLeft(60);
+      setTimeLeft(QUESTION_TIME_SECONDS);
       answerLockedRef.current = false;
     } else {
       onComplete(score);
@@ -220,7 +222,7 @@ export function QuizInterface({
   const isCorrect = isOrdering
     ? areOrdersEqual(orderedItems, currentQuestion.correctOrder)
     : selectedOriginalIndex === currentQuestion.correctAnswer;
-  const timeProgress = (timeLeft / 60) * 100;
+  const timeProgress = (timeLeft / QUESTION_TIME_SECONDS) * 100;
   const correctAnswerText = isOrdering
     ? ""
     : (currentQuestion as MultipleChoiceQuestion).options[
