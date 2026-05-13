@@ -16,7 +16,9 @@ interface WelcomeScreenProps {
 }
 
 const mohamedWhatsappUrl = "https://wa.me/201033117802";
+const adhamWhatsappUrl = "https://adham1611.github.io/Professional-Portfolio-Website/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZnRzaARruedleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAaeK1QQZtNd_BCE1cDSArvrlA9d9AsuUxDJmngceSAopUtwR2blxkleNc6MV_Q_aem_trd9XK80pOy5nZXfajumJw";
 const mohamedEmail = "mohamedewaida8@gmail.com";
+const adhamEmail = "adham.ahmed.cs@gmail.com";
 
 export function WelcomeScreen({ onStart }: WelcomeScreenProps) {
   return (
@@ -186,16 +188,31 @@ export function WelcomeScreen({ onStart }: WelcomeScreenProps) {
         <div className="mb-2 text-xs font-semibold uppercase tracking-wide text-white/50">
           Made by
         </div>
-        <a
+               <a
           href={mohamedWhatsappUrl}
           target="_blank"
           rel="noreferrer"
           className="block font-bold text-cyan-200 transition hover:text-white hover:underline md:text-base"
         >
-          Eng/Mohamed Ewaida
+          Eng/Mohamed Ewaida 
+        </a>
+                <a
+          href={adhamWhatsappUrl}
+          target="_blank"
+          rel="noreferrer"
+          className="block font-bold text-cyan-200 transition hover:text-white hover:underline md:text-base"
+        >
+          Eng/Adham Hieba
         </a>
         <a
           href={`mailto:${mohamedEmail}`}
+          className="mt-2 flex min-w-0 items-center gap-2 text-white/75 transition hover:text-white hover:underline"
+        >
+          <Mail size={16} className="shrink-0 text-cyan-200" />
+          <span className="truncate">{mohamedEmail}</span>
+        </a>
+         <a
+          href={`mailto:${adhamEmail}`}
           className="mt-2 flex min-w-0 items-center gap-2 text-white/75 transition hover:text-white hover:underline"
         >
           <Mail size={16} className="shrink-0 text-cyan-200" />
